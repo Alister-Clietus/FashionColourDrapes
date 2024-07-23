@@ -1,0 +1,29 @@
+2024-07-23T11:38:47.044+05:30  INFO 19656 --- [fashionService] [main] c.f.f.FashionServiceApplication          : Starting FashionServiceApplication using Java 19 with PID 19656 (E:\PERSONAL PROJECTS\fashionApp\fashionService\target\classes started by user in E:\PERSONAL PROJECTS\fashionApp\fashionService)
+2024-07-23T11:38:47.050+05:30  INFO 19656 --- [fashionService] [main] c.f.f.FashionServiceApplication          : No active profile set, falling back to 1 default profile: "default"
+2024-07-23T11:38:47.771+05:30  INFO 19656 --- [fashionService] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-23T11:38:47.851+05:30  INFO 19656 --- [fashionService] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 68 ms. Found 1 JPA repository interface.
+2024-07-23T11:38:48.379+05:30  INFO 19656 --- [fashionService] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8077 (http)
+2024-07-23T11:38:48.393+05:30  INFO 19656 --- [fashionService] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-23T11:38:48.394+05:30  INFO 19656 --- [fashionService] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-07-23T11:38:48.453+05:30  INFO 19656 --- [fashionService] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-07-23T11:38:48.454+05:30  INFO 19656 --- [fashionService] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1328 ms
+2024-07-23T11:38:48.612+05:30  INFO 19656 --- [fashionService] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-23T11:38:48.672+05:30  INFO 19656 --- [fashionService] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-07-23T11:38:48.703+05:30  INFO 19656 --- [fashionService] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-07-23T11:38:49.006+05:30  INFO 19656 --- [fashionService] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-23T11:38:49.034+05:30  INFO 19656 --- [fashionService] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-07-23T11:38:49.319+05:30  INFO 19656 --- [fashionService] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1c18ee69
+2024-07-23T11:38:49.320+05:30  INFO 19656 --- [fashionService] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-07-23T11:38:50.335+05:30  INFO 19656 --- [fashionService] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-07-23T11:38:50.485+05:30  INFO 19656 --- [fashionService] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-23T11:38:50.914+05:30  WARN 19656 --- [fashionService] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-23T11:38:51.335+05:30  INFO 19656 --- [fashionService] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8077 (http) with context path '/'
+2024-07-23T11:38:51.345+05:30  INFO 19656 --- [fashionService] [main] c.f.f.FashionServiceApplication          : Started FashionServiceApplication in 4.761 seconds (process running for 5.465)
+2024-07-23T11:39:20.946+05:30  INFO 19656 --- [fashionService] [http-nio-8077-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-23T11:39:20.947+05:30  INFO 19656 --- [fashionService] [http-nio-8077-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-07-23T11:39:20.949+05:30  INFO 19656 --- [fashionService] [http-nio-8077-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-07-23T12:17:08.318+05:30  WARN 19656 --- [fashionService] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m54s701ms670µs600ns).
+2024-07-23T12:23:36.683+05:30  INFO 19656 --- [fashionService] [RMI TCP Connection(51)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2024-07-23T12:23:37.761+05:30  INFO 19656 --- [fashionService] [RMI TCP Connection(51)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-07-23T12:23:37.777+05:30  INFO 19656 --- [fashionService] [RMI TCP Connection(51)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-07-23T12:23:37.792+05:30  INFO 19656 --- [fashionService] [RMI TCP Connection(51)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

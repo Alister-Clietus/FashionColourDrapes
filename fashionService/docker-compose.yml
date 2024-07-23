@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  springboot-app:
+    image: fashionservice:latest
+    container_name: springboot_container
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8077:8077"
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://host.docker.internal:3306/fashiondesign
+      SPRING_DATASOURCE_USERNAME: root
+      SPRING_DATASOURCE_PASSWORD: Alister123@
+    networks:
+      - my-network
+
+networks:
+  my-network:
+    driver: bridge

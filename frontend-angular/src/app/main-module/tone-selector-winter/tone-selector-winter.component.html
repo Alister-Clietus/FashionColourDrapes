@@ -1,0 +1,13 @@
+<app-navbar></app-navbar>
+<span>
+<div class="flex-container">
+    <app-color-box-winter-left></app-color-box-winter-left>
+    <app-photo-upload></app-photo-upload>
+    <app-color-box-winter-right></app-color-box-winter-right>
+</div>
+
+<div *ngIf="isVisible">
+    <app-dress></app-dress>
+</div>
+</span>
+<app-sticky-note *ngIf="showStickyNote" (close)="showStickyNote = false"></app-sticky-note>

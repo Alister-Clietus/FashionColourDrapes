@@ -1,0 +1,22 @@
+<div class="sticky-note" cdkDrag>
+    <div class="header">
+      <span>Sticky Note</span>
+      <button (click)="closeNote()">×</button>
+    </div>
+    <div class="content">
+      <form (ngSubmit)="sendNote()">
+        <div>
+          <label for="email">Client Email:</label>
+          <input type="email" id="email" [(ngModel)]="this.clientdto.clientEmail" name="clientEmail" required>
+        </div>
+        <div>
+          <label for="note">Note:</label>
+          <textarea id="note" [(ngModel)]="this.clientdto.clientNote" name="ClientNote" required></textarea>
+        </div>
+        <button type="submit">
+            <i class="fas fa-paper-plane" (click)="sendNote()"></i> Send
+          </button>
+      </form>
+    </div>
+  </div>
+  

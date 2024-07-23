@@ -1,0 +1,65 @@
+
+<div class="flex-container">
+    <div class="boxex">
+      <div class="buttons d-flex flex-wrap">
+        <button class="btn btn-dark m-2" (click)="dress()">
+          <i class="fa-solid fa-shirt"></i> Dress
+        </button>
+        <button class="btn btn-dark m-2" (click)="onButtonClick()">
+          <i class="fa-solid fa-file"></i> Save
+        </button>
+        <button class="btn btn-dark m-2" (click)="TakescreenShot()">
+          <i class="fa-solid fa-download"></i> Dwn
+        </button>
+        <button class="btn btn-dark m-2" (click)="remove()">
+          <i class="fa-solid fa-trash-can"></i> Remove
+        </button>
+        <button class="btn btn-light m-2" (click)="reset()">
+          <i class="fa-solid fa-ban"></i> Reset
+        </button>
+        <input type="text" class="form-control m-2" style="width: 120px; height: 40px;" [(ngModel)]="email" placeholder="ID">
+        <div>
+          <select class="form-control m-2" style="width: 120px; height: 40px;" [(ngModel)]="rgb">
+            <option *ngFor="let color of colorOptions" [value]="color.value">
+              {{ color.name }}
+            </option>
+          </select>
+        </div>
+        </div>
+      <div class="image-container" #imageContainer>
+          <input type="file" (change)="onFileSelected($event)" hidden #fileInput>
+          <img src="../assets/icons/upload.png" alt="Upload Icon" class="upload-icon" (click)="fileInput.click()">
+          <img [src]="imageSrc" [ngStyle]="imageStyles" *ngIf="imageSrc">
+      </div>
+      <div class="buttons">
+          <button class="btn btn-dark m-2" (click)="move('left')">
+            <i class="fas fa-arrow-left"></i> Left
+          </button>
+          <button class="btn btn-dark m-2" (click)="move('right')">
+            <i class="fas fa-arrow-right"></i> Right
+          </button>
+          <button class="btn btn-dark m-2" (click)="move('up')">
+            <i class="fas fa-arrow-up"></i> Up
+          </button>
+          <button class="btn btn-dark m-2" (click)="move('down')">
+            <i class="fas fa-arrow-down"></i> Down
+          </button>
+          <button class="btn btn-light m-2" (click)="zoom('in')">
+            <i class="fas fa-search-plus"></i> Zoom In
+          </button>
+          <button class="btn btn-light m-2" (click)="zoom('out')">
+            <i class="fas fa-search-minus"></i> Zoom Out
+          </button>
+          <button class="btn btn-warning m-2" (click)="centerAndFit()">
+            <i class="fas fa-compress-arrows-alt"></i> Center
+          </button>
+          <button class="btn btn-warning m-2" (click)="stickyNote()">
+            <i class="fas fa-sticky-note"></i>
+          </button>
+          
+      </div>
+
+    </div>
+</div>
+
+

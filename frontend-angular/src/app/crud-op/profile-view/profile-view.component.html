@@ -1,0 +1,70 @@
+<app-nav-bar></app-nav-bar>
+<div class="container mt-5">
+    <div class="row d-flex justify-content-center">
+
+        <div class="col-md-7">
+
+            <div class="card p-3 py-4">
+
+              <div class="text-center">
+                <img [src]="imageUrls" alt="Image Not Uploaded" class="rounded-circle img-fit">
+            </div>
+            
+                <div class="text-center mt-3">
+                    <span class="bg-secondary p-1 px-4 rounded text-white">{{this.clientdto.clientName}}</span>
+                    <p class="mt-2 mb-0">{{this.clientdto.clientEmail}}</p>
+                    <div class="user-details">
+                      <div class="input-box">
+                        <input type="text" placeholder="Enter Client Full-Name" [(ngModel)]="clientdto.clientName" name="clientName" id="clientName" required>
+                        <i class="fas fa-user"></i>
+                      </div>
+                      <div class="input-box">
+                        <input type="text" placeholder="Enter Client's Username" [(ngModel)]="clientdto.username" name="username" id="username" required>
+                        <i class="fas fa-user-circle"></i>
+                      </div>
+                      <div class="input-box">
+                        <input type="text" placeholder="Enter Client's Email" [(ngModel)]="clientdto.clientEmail" name="clientEmail" id="clientEmail" disabled>
+                        <i class="fas fa-envelope"></i>
+                      </div>
+                      <div class="input-box">
+                        <input type="text" placeholder="Enter Client's Phone Number" [(ngModel)]="clientdto.clientPhoneNumber" name="clientPhoneNumber" id="clientPhoneNumber" required>
+                        <i class="fas fa-phone"></i>
+                      </div>
+                      <div class="input-box">
+                        <input type="text" placeholder="Enter Client's Address" [(ngModel)]="clientdto.clientAddress" name="clientAddress" id="clientAddress" required>
+                        <i class="fas fa-home"></i>
+                      </div>
+                      <div class="input-box">
+                        <input type="file" (change)="onFileSelected($event)" required>
+                        <i class="fas fa-upload"></i>
+                      </div>
+                      <div class="input-box">
+                        <input type="text" placeholder="Enter Client's Pincode" [(ngModel)]="clientdto.pincode" name="pincode" id="pincode" required>
+                        <i class="fas fa-map-pin"></i>
+                      </div>
+                      <div class="input-box">
+                        <input type="text" placeholder="Enter Client's Gender" [(ngModel)]="clientdto.clientGender" name="gender" id="gender" required>
+                        <i class="fas fa-venus-mars"></i>
+                      </div>
+                    </div>
+                    
+                    <div class="buttons">
+                        <button class="btn btn-outline-primary px-4" (click)="updatePhoto()">Update Photo</button>
+                        <button class="btn btn-primary px-4 ms-3" (click)="update()">Update Details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- card-display.component.html -->
+<div class="photo-card-container">
+  <div class="photo-card" *ngFor="let image of images">
+    <img [src]="image" alt="Image" class="photo-card-img">
+    <div class="photo-card-body">
+      <h5 class="photo-card-title">Image Card</h5>
+    </div>
+  </div>
+</div>
+
+

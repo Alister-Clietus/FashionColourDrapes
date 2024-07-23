@@ -1,0 +1,69 @@
+<link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+<!-- SIDE BAR STARTS HERE ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<div class="sidebar" [ngClass]="{'open': isSidebarOpen}">
+    <div class="logo-details">
+      <i class='bx bxl-c-plus-plus icon'></i>
+      <div class="logo_name">INTERLAND</div>
+      <i class='bx bx-menu' (click)="toggleSidebar()" id="btn"></i>
+    </div>
+    <ul class="nav-list">
+      <li>
+        <a (click)="goToDashboard()">
+          <i class='bx bx-grid-alt'></i>
+          <span class="links_name">Dashboard</span>
+        </a>
+         <span class="tooltip">Dashboard</span>
+      </li>
+      <li>
+       <a (click)="listUsers()">
+         <i class='bx bx-user'></i>
+         <span class="links_name">Clients</span>
+       </a>
+       <span class="tooltip">List Clients</span>
+     </li>
+     <li>
+       <a (click)="addClient()">
+         <i class='bx bx-plus'></i>
+         <span class="links_name">Add Clients</span>
+       </a>
+       <span class="tooltip">Add Clients</span>
+     </li>
+     <li>
+       <a (click)="showDress()">
+         <i class='bx bx-pie-chart-alt-2'></i>
+         <span class="links_name">Show Colours</span>
+       </a>
+       <span class="tooltip">Show Colours</span>
+     </li>
+     <li>
+       <a (click)="viewCodeBase()">
+         <i class='bx bx-desktop'></i>
+         <span class="links_name">Drapes</span>
+       </a>
+       <span class="tooltip">Show Drapes</span>
+     </li>
+     <li>
+       <a  (click)="downloadFile()">
+         <i class='bx bx-download'></i>
+         <span class="links_name">Download</span>
+       </a>
+       <span class="tooltip">Download</span>
+     </li>
+     <li>
+       <a (click)="openSettings()">
+         <i class='bx bx-cog'></i>
+         <span class="links_name">Setting</span>
+       </a>
+       <span class="tooltip">Setting</span>
+     </li>
+     <li>
+        <a (click)="logout()">
+          <i class='bx bx-log-out'></i>
+          <span class="links_name">Logout</span>
+        </a>
+        <span class="tooltip">Logout</span>
+      </li>
+    </ul>
+</div>
+<!-- SIDE BAR ENDS HERE ************************************************************************ -->

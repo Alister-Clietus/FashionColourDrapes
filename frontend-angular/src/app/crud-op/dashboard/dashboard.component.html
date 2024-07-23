@@ -1,0 +1,81 @@
+<app-nav-bar></app-nav-bar>
+
+<div class="search-container">
+  <div class="input-row">
+      <div class="input-col">
+          <input type="text" class="search-input" placeholder="Search Name" id="Idname">
+      </div>
+      <div class="input-col">
+          <input type="text" class="search-input" placeholder="Search Email" id="IdEmail">
+      </div>
+      <div class="input-col">
+          <input type="text" class="search-input" placeholder="Seaech Phone Number" id="IdPhonenumber">
+      </div>
+  </div>
+  <div class="input-row">
+      <div class="input-col">
+          <input type="text" class="search-input" placeholder="Search Gender" id="IdGender">
+      </div>
+      <div class="input-col">
+          <input type="text" class="search-input" placeholder="Search Address" id="IdAddress">
+      </div>
+      <div class="input-col">
+          <input type="text" class="search-input" placeholder="Search Pincode" id="IdPincode">
+      </div>
+  </div>
+  <div class="button-group">
+      <button class="search-button" (click)="search()">Search</button>
+      <button class="clear-button" (click)="clear()">Clear</button>
+  </div>
+</div>
+
+<div class="container">
+    <div class="table">
+        <table id="clientdata" class="table">
+            <thead id="id-table-head"> 
+                
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+    </div>
+</div>
+<div class="containerr mt-4" style="margin-left: 130px;">
+  <button class="bt" style="background-color: darkblue;" (click)="update()">
+      <i class="fas fa-sync-alt"></i> Update
+  </button>
+  <button class="bt" style="background-color: darkred;" (click)="remove()">
+      <i class="fas fa-trash-alt"></i> Delete
+  </button>
+  <button class="bt" style="background-color: darkgreen;" (click)="add()">
+      <i class="fas fa-plus"></i> Add
+  </button>
+  <button class="bt" style="background-color: darkorchid;" data-toggle="modal" data-target="#uploadModal">
+      <i class="fas fa-upload"></i> Upload
+  </button>
+  <button class="bt" style="background-color: rgb(12, 13, 13);" (click)="downloadPDF()">
+      <i class="fas fa-file-pdf"></i> Download PDF
+  </button>
+</div>
+
+
+<div class="modal" id="uploadModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Upload Image</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <input type="file" (change)="onFileSelected($event)" />
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn" data-dismiss="modal">Close</button>
+          <button type="button" class="btn" (click)="onUpload()">Upload</button>
+        </div>
+      </div>
+    </div>
+</div>

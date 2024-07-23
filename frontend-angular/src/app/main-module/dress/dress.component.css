@@ -1,0 +1,68 @@
+/* src/app/tshirt/tshirt.component.css */
+.tshirt {
+    width: 150px;
+    height: 150px;
+    background-color: white;
+    position: absolute;
+    top: 475px;
+    left: 680px;
+    clip-path: polygon(
+      0% 10%, /* left shoulder */
+      10% 0%, /* left V-neck */
+      30% 0%, /* left jawline start */
+      35% 15%, /* left jawline point */
+      50% 20%, /* chin */
+      65% 15%, /* right jawline point */
+      70% 0%, /* right jawline start */
+      90% 0%, /* right V-neck */
+      100% 10%, /* right shoulder */
+      100% 100%, /* bottom right */
+      0% 100% /* bottom left */
+    );
+    cursor: move;
+    box-sizing: border-box;
+    /* border: 2px solid #000; */
+  }
+  
+  .resize-handle {
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    position: absolute;
+  }
+  
+  .top-left {
+    top: -5px;
+    left: -5px;
+    cursor: nwse-resize;
+  }
+  
+  .top-right {
+    top: -5px;
+    right: -5px;
+    cursor: nesw-resize;
+  }
+  
+  .bottom-left {
+    bottom: -5px;
+    left: -5px;
+    cursor: nesw-resize;
+  }
+  
+  .bottom-right {
+    bottom: -5px;
+    right: -5px;
+    cursor: nwse-resize;
+  }
+  .navbar {
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 20px;
+    }
+    
+    .color-button {
+      padding: 10px;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+    }

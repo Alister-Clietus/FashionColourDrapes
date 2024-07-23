@@ -1,0 +1,74 @@
+<app-nav-bar></app-nav-bar>
+
+<div class="container" id="main">
+    <div class="title">Add Client</div>
+    <div class="content">
+      <form action="#">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Client Full Name</span>
+            <span class="error-msg-span" style="color: red;text-transform: capitalize; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;" >{{validationMessage.clientName}}</span>
+            <input type="text" placeholder="Enter Client Full Name" [(ngModel)]="clientdto.clientName" name="clientName" id="clientName" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Username</span>
+            <span class="error-msg-span" style="color: red;text-transform: capitalize; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;" >{{validationMessage.username}}</span>
+            <input type="text" placeholder="Enter Clients username" [(ngModel)]="clientdto.username" name="username" id="username" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Email</span>
+            <span class="error-msg-span" style="color: red;text-transform: capitalize; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;" >{{validationMessage.clientEmail}}</span>
+            <input type="text" placeholder="Enter Clients email" [(ngModel)]="clientdto.clientEmail" name="clientEmail" id="clientEmail" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Phone Number</span>
+            <span class="error-msg-span" style="color: red;text-transform: capitalize; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;" >{{validationMessage.clientPhoneNumber}}</span>
+            <input type="text" placeholder="Enter Clients Phonenumber" [(ngModel)]="clientdto.clientPhoneNumber" name="clientPhoneNumber" id="clientPhoneNumber" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Address</span>
+            <span class="error-msg-span" style="color: red;text-transform: capitalize; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;" >{{validationMessage.clientAddress}}</span>
+            <input type="text" placeholder="Enter Clients Address" [(ngModel)]="clientdto.clientAddress" name="clientAddress" id="clientAddress" required>
+          </div>
+          <!-- <div class="input-box">
+            <span class="details">Country</span>
+            <span class="error-msg-span" style="color: red;text-transform: capitalize; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;" >{{validationMessage.Clientcountry}}</span>
+            <input type="text" placeholder="Enter Clients Nationality" [(ngModel)]="clientdto.Clientcountry" name="Country" id="Country" required>
+          </div> -->
+          <!-- <div class="input-box">
+            <span class="details">Upload Image</span>
+            <input type="file" (change)="onFileSelected($event)" required>
+          </div> -->
+          <div class="input-box">
+            <span class="details">Pincode</span>
+            <span class="error-msg-span" style="color: red;text-transform: capitalize; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;" >{{validationMessage.pincode}}</span>
+            <input type="text" placeholder="Enter Clients Pincode" [(ngModel)]="clientdto.pincode" name="pincode" id="pincode" required>
+          </div>
+        </div>
+        <div class="gender-details">
+          <input type="radio" name="gender" id="dot-1" [(ngModel)]="clientdto.clientGender" value="Male">
+          <input type="radio" name="gender" id="dot-2" [(ngModel)]="clientdto.clientGender" value="Female">
+          <input type="radio" name="gender" id="dot-3" [(ngModel)]="clientdto.clientGender" value="Prefer not to say">
+          <span class="gender-title">Gender</span>
+          <div class="category">
+            <span class="error-msg-span" style="color: red;text-transform: capitalize; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;" >{{validationMessage.clientGender }}</span>
+            <label for="dot-1">
+            <span class="dot one"></span>
+            <span class="gender">Male</span>
+          </label>
+          <label for="dot-2">
+            <span class="dot two"></span>
+            <span class="gender">Female</span>
+          </label>
+          <label for="dot-3">
+            <span class="dot three"></span>
+            <span class="gender">Prefer not to say</span>
+            </label>
+          </div>
+        </div>
+        <div class="button" >
+          <input type="submit" value="Register" (click)="register()">
+        </div>
+      </form>
+    </div>
+</div>

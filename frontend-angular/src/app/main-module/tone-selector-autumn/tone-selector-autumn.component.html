@@ -1,0 +1,14 @@
+<app-navbar></app-navbar>
+
+<span>
+<div class="flex-container">
+    <app-color-box-autumn-left></app-color-box-autumn-left>
+    <app-photo-upload></app-photo-upload>
+    <app-color-box-autumn-right></app-color-box-autumn-right>
+</div>
+
+<div *ngIf="isVisible">
+    <app-dress></app-dress>
+</div>
+</span>
+<app-sticky-note *ngIf="showStickyNote" (close)="showStickyNote = false"></app-sticky-note>

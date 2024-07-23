@@ -1,0 +1,44 @@
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg fixed-top bg-light navbar-light">
+    <div class="container text">
+      <a class="navbar-brand" (click)="dashboard()"
+        >Glow in Colours</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-mdb-toggle="collapse"
+        data-mdb-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto align-items-center">
+          <li class="nav-item">
+            <a class="nav-link mx-2" (click)="dashboard()">Dashboard</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-2" (click)="Drapes()">Drapes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-2" (click)="winterDrapes()">Winter</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-2" (click)="summerDrapes()">Summer</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-2" (click)="springDrapes()">Spring</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-2" (click)="autumnDrapes()">Autumn</a>
+          </li>
+          <li class="nav-item ms-3">
+            <a class="btn btn-black btn-rounded" (click)="logout()">Log out</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Navbar -->

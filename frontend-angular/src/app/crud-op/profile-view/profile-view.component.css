@@ -1,0 +1,191 @@
+body{
+    background:#eee;
+}
+
+.card{
+    border:none;
+
+    position:relative;
+    overflow:hidden;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.card:before{
+    
+    content:"";
+    position:absolute;
+    left:0;
+    top:0;
+    width:4px;
+    height:100%;
+    background-color:#E1BEE7;
+    transform:scaleY(1);
+    transition:all 0.5s;
+    transform-origin: bottom
+}
+
+.card:after{
+    
+    content:"";
+    position:absolute;
+    left:0;
+    top:0;
+    width:4px;
+    height:100%;
+    background-color:#8E24AA;
+    transform:scaleY(0);
+    transition:all 0.5s;
+    transform-origin: bottom
+}
+
+.card:hover::after{
+    transform:scaleY(1);
+}
+
+
+.fonts{
+    font-size:11px;
+}
+
+.social-list{
+    display:flex;
+    list-style:none;
+    justify-content:center;
+    padding:0;
+}
+
+.social-list li{
+    padding:10px;
+    color:#8E24AA;
+    font-size:19px;
+}
+
+
+.buttons button:nth-child(1){
+       border:1px solid #8E24AA !important;
+       color:#8E24AA;
+       margin-top: 30px;
+       height:40px;
+}
+
+.buttons button:nth-child(1):hover{
+       border:1px solid #8E24AA !important;
+       color:#fff;
+       height:40px;
+       margin-top: 30px;
+       background-color:#8E24AA;
+}
+
+.buttons button:nth-child(2){
+    margin-top: 30px;
+       border:1px solid #8E24AA !important;
+       background-color:#8E24AA;
+       color:#fff;
+        height:40px;
+}
+
+.user-details {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    gap: 20px; /* Space between items */
+  }
+  
+  .input-box {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  
+
+  form .user-details .input-box{
+    margin-bottom: 15px;
+    width: calc(100% / 2 - 20px);
+  }
+  form .input-box span.details{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+  }
+  .user-details .input-box input{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    font-size: 16px;
+    border-radius: 5px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+  }
+  .user-details .input-box input:focus,
+  .user-details .input-box input:valid{
+    border-color: #9b59b6;
+  }
+
+
+  
+/* card-display.component.css */
+.photo-card-container {
+  margin-left: 22%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 2%;
+  width: 900px;
+}
+
+.photo-card {
+  flex: 1 1 calc(33.333% - 20px);
+  box-sizing: border-box;
+  margin: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.photo-card-img {
+  width: 100%;
+  height: auto;
+}
+
+.photo-card-body {
+  padding: 10px;
+}
+
+.photo-card-title {
+  font-size: 1.2em;
+  margin: 0;
+}
+ /* Icons */
+
+ .input-box input[type="text"],
+.input-box input[type="file"] {
+  width: 100%;
+  padding-right: 30px; /* Adjust based on icon size */
+}
+
+.input-box i {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: #888; /* Optional: Change color of icons */
+}
+
+
+.rounded-circle {
+  width: 200px; /* Fixed width */
+  height: 200px; /* Fixed height */
+  border-radius: 50%; /* Make it circular */
+  overflow: hidden; /* Hide overflow */
+}
+
+.img-fit {
+  width: 200px; /* Fill the container */
+  height: 200px; /* Fill the container */
+  object-fit: cover; /* Maintain aspect ratio, fill the circle */
+}

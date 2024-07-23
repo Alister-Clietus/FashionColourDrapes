@@ -1,0 +1,17 @@
+.flex-container {
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: center; /* Adjusts the spacing between items */
+    align-items: center; /* Centers items vertically */
+    height: 100vh; /* Optional: Full viewport height */
+  }
+  .flex-container-box {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 100px;
+  }
+
+  .container-with-scroll {
+    overflow: hidden; /* Hide scrollbars */
+  }
