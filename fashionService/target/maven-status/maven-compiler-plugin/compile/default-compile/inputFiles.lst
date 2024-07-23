@@ -1,0 +1,12 @@
+E:\PERSONAL PROJECTS\FashionDrapesApp\fashionService\src\main\java\com\fashionapp\fashionService\controller\FashionController.java
+E:\PERSONAL PROJECTS\FashionDrapesApp\fashionService\src\main\java\com\fashionapp\fashionService\CorsFilterConfig.java
+E:\PERSONAL PROJECTS\FashionDrapesApp\fashionService\src\main\java\com\fashionapp\fashionService\dto\ClientDto.java
+E:\PERSONAL PROJECTS\FashionDrapesApp\fashionService\src\main\java\com\fashionapp\fashionService\dto\ClientIddto.java
+E:\PERSONAL PROJECTS\FashionDrapesApp\fashionService\src\main\java\com\fashionapp\fashionService\dto\ClientNoteDTO.java
+E:\PERSONAL PROJECTS\FashionDrapesApp\fashionService\src\main\java\com\fashionapp\fashionService\entity\ClientEntity.java
+E:\PERSONAL PROJECTS\FashionDrapesApp\fashionService\src\main\java\com\fashionapp\fashionService\exception\ExceptionControllerAdvice.java
+E:\PERSONAL PROJECTS\FashionDrapesApp\fashionService\src\main\java\com\fashionapp\fashionService\FashionServiceApplication.java
+E:\PERSONAL PROJECTS\FashionDrapesApp\fashionService\src\main\java\com\fashionapp\fashionService\repository\ClientRepo.java
+E:\PERSONAL PROJECTS\FashionDrapesApp\fashionService\src\main\java\com\fashionapp\fashionService\repository\specifications\SecurityUserSpec.java
+E:\PERSONAL PROJECTS\FashionDrapesApp\fashionService\src\main\java\com\fashionapp\fashionService\service\ClientService.java
+E:\PERSONAL PROJECTS\FashionDrapesApp\fashionService\src\main\java\com\fashionapp\fashionService\service\ClientServiceImp.java

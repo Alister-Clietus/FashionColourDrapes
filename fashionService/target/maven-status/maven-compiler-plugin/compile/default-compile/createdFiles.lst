@@ -1,0 +1,13 @@
+com\fashionapp\fashionService\FashionServiceApplication.class
+com\fashionapp\fashionService\exception\ExceptionControllerAdvice.class
+com\fashionapp\fashionService\dto\ClientNoteDTO.class
+com\fashionapp\fashionService\dto\ClientDto.class
+com\fashionapp\fashionService\repository\specifications\SecurityUserSpec.class
+com\fashionapp\fashionService\controller\FashionController.class
+com\fashionapp\fashionService\repository\specifications\SecurityUserSpec$1.class
+com\fashionapp\fashionService\CorsFilterConfig.class
+com\fashionapp\fashionService\repository\ClientRepo.class
+com\fashionapp\fashionService\service\ClientServiceImp.class
+com\fashionapp\fashionService\dto\ClientIddto.class
+com\fashionapp\fashionService\entity\ClientEntity.class
+com\fashionapp\fashionService\service\ClientService.class
