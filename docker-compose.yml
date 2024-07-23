@@ -17,6 +17,7 @@ services:
       - my-network
     depends_on:
       - mysql
+      - frontend-angular
 
   frontend-angular:
     image: angularfrontend:latest

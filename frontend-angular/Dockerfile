@@ -10,6 +10,9 @@ COPY package*.json ./
 # Install dependencies
 RUN npm install
 
+#Install Angular
+RUN npm install -g @angular/cli@9.1.15
+
 # Copy the rest of the application code
 COPY . .
 
