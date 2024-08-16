@@ -147,5 +147,19 @@ public class FashionController
 	{
 		return new ResponseEntity<>(clientservice.addClientNotes(clientnote),HttpStatus.OK);
 	}
+	
+	@GetMapping("/showclientEmails")
+	ResponseEntity<?> showAllClientEmails()
+	{
+
+		return new ResponseEntity<>(clientservice.getAllClientEmails(),HttpStatus.OK);
+	}
+	
+	@GetMapping("/showclientNotes")
+	ResponseEntity<?> showAllClientNotes()
+	{
+
+		return new ResponseEntity<>(clientservice.getAllClientNotes(),HttpStatus.OK);
+	}
 
 }

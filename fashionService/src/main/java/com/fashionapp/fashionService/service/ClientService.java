@@ -18,6 +18,8 @@ public interface ClientService
 	ResponseEntity<?> updateClientDetails(ClientDto clientdto);
 	ResponseEntity<?> deleteClientDetails(ClientIddto clientdto);
 	JSONObject getAllClientDetails();
+	JSONObject getAllClientEmails();
+	public JSONObject getAllClientNotes();
 	JSONObject getClientDetails(ClientIddto clientdto);
 	JSONObject getClientPhotos(ClientIddto clientdto);
 	ResponseEntity<?> uploadImage(MultipartFile file,String email);

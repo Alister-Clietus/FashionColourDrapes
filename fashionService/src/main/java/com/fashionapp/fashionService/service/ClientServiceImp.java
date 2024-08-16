@@ -445,6 +445,51 @@ public class ClientServiceImp implements ClientService
 	        return new ResponseEntity<>("Failed to update client details: " + e.getMessage(), HttpStatus.INTERNAL_SERVER_ERROR);
 	    }
 	}
+	
+	public JSONObject getAllClientEmails()
+	{
+		JSONObject result = new JSONObject();
+		try {
+			List<ClientEntity> usersList = clientrepo.findAll();
+
+			JSONArray array = new JSONArray();
+			for (ClientEntity users : usersList) {
+				JSONObject obj = new JSONObject();
+				obj.put("NAME", users.getClientName());
+				obj.put("EMAIL", users.getClientEmail());
+				array.add(obj);
+			}
+			result.put("aaData", array);
+			result.put("iTotalDisplayRecords", clientrepo.findAll().size());
+
+		} catch (Exception e) {
+			logger.error("Error : " + e.getMessage(), e);
+		}
+		return result;
+	}
+	
+	public JSONObject getAllClientNotes()
+	{
+		JSONObject result = new JSONObject();
+		try {
+			List<ClientEntity> usersList = clientrepo.findAll();
+
+			JSONArray array = new JSONArray();
+			for (ClientEntity users : usersList) {
+				JSONObject obj = new JSONObject();
+				obj.put("NAME", users.getClientName());
+				obj.put("NOTES", users.getClientNote());
+				array.add(obj);
+			}
+			result.put("aaData", array);
+			result.put("iTotalDisplayRecords", clientrepo.findAll().size());
+
+		} catch (Exception e) {
+			logger.error("Error : " + e.getMessage(), e);
+		}
+		return result;
+	}
+
     
 
 
