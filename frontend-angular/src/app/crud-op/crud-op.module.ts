@@ -10,10 +10,11 @@ import { DressColorComponent } from './dress-color/dress-color.component';
 import { ProfileViewComponent } from './profile-view/profile-view.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { SettingsComponent } from './settings/settings.component';
+import { ShowStickyNotesComponent } from './show-sticky-notes/show-sticky-notes.component';
 
 
 @NgModule({
-  declarations: [DashboardComponent, NavBarComponent, AddUserComponent, DressColorComponent, ProfileViewComponent, LandingPageComponent, SettingsComponent],
+  declarations: [DashboardComponent, NavBarComponent, AddUserComponent, DressColorComponent, ProfileViewComponent, LandingPageComponent, SettingsComponent, ShowStickyNotesComponent],
   imports: [
     FormsModule,
     CommonModule,

@@ -6,6 +6,7 @@ import { DressColorComponent } from './dress-color/dress-color.component';
 import { ProfileViewComponent } from './profile-view/profile-view.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { SettingsComponent } from './settings/settings.component';
+import { ShowStickyNotesComponent } from './show-sticky-notes/show-sticky-notes.component';
 
 
 const routes: Routes = 
@@ -16,6 +17,7 @@ const routes: Routes =
   { path: 'dresscolor', component:DressColorComponent},
   { path: 'profileview', component:ProfileViewComponent},
   { path: 'settings', component:SettingsComponent},
+  { path: 'notes', component:ShowStickyNotesComponent},
   {
     path:"client/:selectedUserName",component:ProfileViewComponent
   }

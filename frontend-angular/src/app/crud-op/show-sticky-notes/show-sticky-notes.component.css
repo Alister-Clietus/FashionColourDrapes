@@ -1,0 +1,42 @@
+.sticky-note {
+    width: 200px;
+    height: auto;
+    background-color: #FFFF88; /* Light yellow background */
+    border: 1px solid #FFD700; /* Dark yellow border */
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    font-family: Arial, sans-serif;
+    position: relative;
+    flex: 1 1 calc(25% - 10px); /* 25% width minus gap */
+    box-sizing: border-box; /* Ensure padding and border are included in the width */
+}
+
+.sticky-note-container {
+    margin-left: 100px;
+    margin-right: 50px;
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px; /* Adjust gap as needed */
+}
+
+.sticky-note::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 20px;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #FFFF88; /* Match background color */
+}
+.name {
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+.note {
+    font-size: 12px;
+}

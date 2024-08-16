@@ -31,4 +31,9 @@ export class HttpserviceService {
     return this.http.post<T>(url, data);
   } // Function to get data to the springboot backend
 
+  public getData<T>(url: string): Observable<T> {
+    return this.http.get<T>(url);
+  }
+  
+
 }

@@ -39,7 +39,7 @@ toggleSidebar() {
 throw new Error('Method not implemented.');
 }
 logout() {
-throw new Error('Method not implemented.');
+  this.router.navigate(['./notes'],{skipLocationChange:true});
 }
 
   constructor(private router: Router) { }

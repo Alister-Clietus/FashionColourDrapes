@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-landing-page',
@@ -6,8 +7,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./landing-page.component.css']
 })
 export class LandingPageComponent implements OnInit {
+colourdapes() {
+  this.router.navigate(['./main/toneselector'],{skipLocationChange:true});
+}
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
   }

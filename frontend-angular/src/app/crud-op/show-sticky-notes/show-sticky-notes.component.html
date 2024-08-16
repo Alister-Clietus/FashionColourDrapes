@@ -1,0 +1,10 @@
+<app-nav-bar></app-nav-bar>
+
+<div class="sticky-note-container">
+    <div *ngFor="let client of clients" class="sticky-note">
+        <div class="name">{{client.NAME}}</div>
+        <div class="note">{{client.NOTES}}</div>
+    </div>
+</div>
+
+  

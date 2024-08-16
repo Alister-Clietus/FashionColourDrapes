@@ -6,8 +6,15 @@
     <div class="content">
       <form (ngSubmit)="sendNote()">
         <div>
+          <label for="name">Client Name:</label>
+          <select id="name" (change)="onNameChange($event.target.value)">
+            <option *ngFor="let client of clients" [value]="client.EMAIL">{{ client.NAME }}</option>
+          </select>
+        </div>
+        
+        <div>
           <label for="email">Client Email:</label>
-          <input type="email" id="email" [(ngModel)]="this.clientdto.clientEmail" name="clientEmail" required>
+          <input type="email" id="email" [(ngModel)]="clientdto.clientEmail" name="clientEmail" required>
         </div>
         <div>
           <label for="note">Note:</label>
