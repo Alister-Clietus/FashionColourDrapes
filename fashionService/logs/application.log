@@ -253,3 +253,25 @@ Caused by: com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Da
 	... 88 common frames omitted
 
 2024-08-26T15:25:33.326+05:30  INFO 1368 --- [fashionService] [http-nio-8077-exec-1] c.f.f.service.ClientServiceImp           : Client Note Uploaded Successfully
+2024-08-26T15:40:46.039+05:30  INFO 1368 --- [fashionService] [RMI TCP Connection(31)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2024-08-26T15:40:46.691+05:30  INFO 1368 --- [fashionService] [RMI TCP Connection(31)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-26T15:40:46.695+05:30  INFO 1368 --- [fashionService] [RMI TCP Connection(31)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-08-26T15:40:46.707+05:30  INFO 1368 --- [fashionService] [RMI TCP Connection(31)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-08-26T15:40:52.384+05:30  INFO 18940 --- [fashionService] [main] c.f.f.FashionServiceApplicationTests     : Starting FashionServiceApplicationTests using Java 19 with PID 18940 (started by user in E:\PERSONAL PROJECTS\FashionDrapesApp\fashionService)
+2024-08-26T15:40:52.386+05:30  INFO 18940 --- [fashionService] [main] c.f.f.FashionServiceApplicationTests     : No active profile set, falling back to 1 default profile: "default"
+2024-08-26T15:40:53.043+05:30  INFO 18940 --- [fashionService] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-26T15:40:53.099+05:30  INFO 18940 --- [fashionService] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 46 ms. Found 1 JPA repository interface.
+2024-08-26T15:40:53.567+05:30  INFO 18940 --- [fashionService] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-26T15:40:53.646+05:30  INFO 18940 --- [fashionService] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-26T15:40:53.692+05:30  INFO 18940 --- [fashionService] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-08-26T15:40:54.222+05:30  INFO 18940 --- [fashionService] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-26T15:40:54.263+05:30  INFO 18940 --- [fashionService] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-26T15:40:54.646+05:30  INFO 18940 --- [fashionService] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@580c17a0
+2024-08-26T15:40:54.648+05:30  INFO 18940 --- [fashionService] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-26T15:40:55.547+05:30  INFO 18940 --- [fashionService] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-26T15:40:55.643+05:30  INFO 18940 --- [fashionService] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-26T15:40:56.219+05:30  WARN 18940 --- [fashionService] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-26T15:40:56.644+05:30  INFO 18940 --- [fashionService] [main] c.f.f.FashionServiceApplicationTests     : Started FashionServiceApplicationTests in 4.525 seconds (process running for 5.4)
+2024-08-26T15:40:57.110+05:30  INFO 18940 --- [fashionService] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-26T15:40:57.113+05:30  INFO 18940 --- [fashionService] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-08-26T15:40:57.124+05:30  INFO 18940 --- [fashionService] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
