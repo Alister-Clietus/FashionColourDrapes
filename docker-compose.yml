@@ -11,13 +11,14 @@ services:
       - "8077:8077"
     environment:
       SPRING_DATASOURCE_URL: jdbc:mysql://mysql:3306/fashiondesign
-      SPRING_DATASOURCE_USERNAME: root
-      SPRING_DATASOURCE_PASSWORD: FashionDesign@123
+      SPRING_DATASOURCE_USERNAME: ${DB_USERNAME}
+      SPRING_DATASOURCE_PASSWORD: ${DB_PASSWORD}
     networks:
       - my-network
     depends_on:
       - mysql
       - frontend-angular
+    restart: always
 
   frontend-angular:
     image: angularfrontend:latest
@@ -29,19 +30,21 @@ services:
       - "80:80"
     networks:
       - my-network
+    restart: always
 
   mysql:
     image: mysql:8.0
     container_name: my_mysql
     environment:
-      MYSQL_ROOT_PASSWORD: FashionDesign@123  # Set the root password
-      MYSQL_DATABASE: fashiondesign  # Optional: Initialize a database
+      MYSQL_ROOT_PASSWORD: ${DB_ROOT_PASSWORD}
+      MYSQL_DATABASE: fashiondesign
     ports:
-      - "3309:3306"  # Map host port 3309 to container port 3306
+      - "3309:3306"
     volumes:
       - mysql_data:/var/lib/mysql
     networks:
       - my-network
+    restart: always
 
 networks:
   my-network:
@@ -49,3 +52,5 @@ networks:
 
 volumes:
   mysql_data:
+
+
